@@ -1,0 +1,1 @@
+function menu(){document.querySelector("body").classList.toggle("open")}var toggleMenu=document.querySelectorAll(".menu")[0];toggleMenu.addEventListener("click",menu,!1);
