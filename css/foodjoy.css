@@ -602,6 +602,9 @@ footer a{
     }
     .boxes {
         width: 80%;
+        display: flex;
+        align-items: center;
+        judtify-content: center;
     }
     .box {
         border: 1px solid #640000;
