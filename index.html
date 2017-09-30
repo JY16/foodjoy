@@ -8,12 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato|Lobster+Two" rel="stylesheet">
-        <link href="css/foodjoy.css" rel="stylesheet" >
+        <link href="css/new.css" rel="stylesheet" >
     </head>
     <body>
         <div class="container">
             <div class="nav-button">
-                <button class="menu">Menu</button>
+                <button class="menu-toggle">Menu</button>
             </div>
             <nav class="flexNav">
                 <a class="r-item" href="#">FoodJoy</a>
@@ -30,20 +30,22 @@
             </section>
             <section id="about" class="about">
                 <h2>About</h2>
-                <div class="abt-container">
-                    <div class="ab-sect">
-                        <div class="ab-image">
+                <div class="about-container"><!--about-container-->
+                    <div class="about-section"><!--about-section-->
+                        <div class="about-image-container"><!--about-image-container-->
                             <img src="images/restaurant-500.png" alt="Image of FoodJoy">
                         </div>
-                        <div class="ab-text">
-                            <p>FoodJoy is a local, family-owned cafe located in the Heart of North Carolina. Here at FoodJoy,
-                            we value our customers and our community. We strive to only use locally sourced ingredients whenever
-                            possible, however, some of our offerings require non-local ingredients. Whether our ingredients are
-                            local or non-local, they are of the finest quality.</p>
+                        <div class="para-container"><!--para-container-->
+                            <p>
+                                FoodJoy is a local, family-owned cafe located in the Heart of North Carolina. Here at FoodJoy,
+                                we value our customers and our community. We strive to only use locally sourced ingredients whenever
+                                possible, however, some of our offerings require non-local ingredients. Whether our ingredients are
+                                local or non-local, they are of the finest quality.
+                            </p>
                         </div>
                     </div>
-                    <div class="ab-sect">
-                        <div class="ab-text">
+                    <div class="about-section">
+                        <div class="para-container">
                             <p>FoodJoy provides:</p>
                             <ul>
                                 <li>Fresh, Quality Ingredients</li>
@@ -52,17 +54,17 @@
                             </ul>
                             <p>When you're at FoodJoy you're family. Even after you leave.</p>
                         </div>
-                        <div class="ab-image image2">
+                        <div class="about-image-container">
                             <img src="images/salad-500.png" alt="Image of FoodJoy">
                         </div>
-                    </div><!--.ab-sect-->
-                </div><!--.abt-container-->
+                    </div><!--.about-section-->
+                </div><!--.about-container-->
             </section>
             <section id="services" class="services">
                 <h2>Services</h2>
-                <div class="serv-container">
-                    <div class="box-container">
-                        <div class="boxes">
+                <div class="services-container">
+                    <div class="boxes">
+                        <div class="box">
                             <h3>Catering</h3>
                             <ul>
                                 <li>Events</li>
@@ -70,14 +72,14 @@
                                 <li>Just Because</li>
                             </ul>
                         </div>
-                        <div class="boxes">
+                        <div class="box">
                             <h3>Delivery</h3>
                             <ul>
                                 <li>Fast</li>
                                 <li>Convenient</li>
                             </ul>
                         </div>
-                        <div class="boxes">
+                        <div class="box">
                             <h3>*Special Requests</h3>
                             <ul>
                                 <li>Special Diet?</li>
@@ -88,13 +90,13 @@
                     <p>*Inquire within for full details.</p>
                 </div>
             </section>
-            <section id="menu" class="fj-menu">
+            <section id="menu" class="menu">
                 <h2>Menu</h2>
-                <div class="fj-menu-container">
+                <div class="menu-container">
                     <div class="menu-group">
                         <div class="menu-items">
-                            <h3 class="mn-items">Sandwiches</h3>
-                            <div class="items open">
+                            <h3>Sandwiches</h3>
+                            <div class="items">
                                 <ul>
                                     <li>Roast Turkey</li>
                                     <li>Grilled Chicken</li>
@@ -103,7 +105,7 @@
                             </div>
                         </div>
                         <div class="menu-items">
-                            <h3 class="mn-items">Soups</h3>
+                            <h3>Soups</h3>
                             <div class="items">
                                 <ul>
                                     <li>Potato Soup</li>
@@ -115,7 +117,7 @@
                     </div>
                     <div class="menu-group">
                         <div class="menu-items">
-                            <h3 class="mn-items">Salads</h3>
+                            <h3>Salads</h3>
                             <div class="items">
                                 <ul>
                                     <li>Honey Mustard Chicken Avocado and Bacon Salad</li>
@@ -125,7 +127,7 @@
                             </div>
                         </div>
                         <div class="menu-items">
-                            <h3 class="mn-items">Pizza</h3>
+                            <h3>Pizza</h3>
                             <div class="items">
                                 <ul>
                                     <li>Turkey Pepperoni Pizza</li>
@@ -137,7 +139,7 @@
                     </div>
                     <div class="menu-group">
                         <div class="menu-items">
-                            <h3 class="mn-items">Beverages</h3>
+                            <h3>Beverages</h3>
                             <div class="items">
                                 <ul>
                                     <li>Sweet Tea</li>
@@ -147,7 +149,7 @@
                             </div>
                         </div>
                         <div class="menu-items">
-                            <h3 class="mn-items">Desserts</h3>
+                            <h3>Desserts</h3>
                             <div class="items">
                                 <ul>
                                     <li>Triple Chocolate Cake</li>
@@ -159,34 +161,34 @@
                     </div>
                 </div>
             </section>
-            <section id="gallery">
+            <section id="gallery" class="gallery">
                 <h2>Gallery</h2>
-                <div class="fj-gallery">
-                    <div>
+                <div class="menu-gallery">
+                    <div class="gallery-image-container">
                         <img src="images/baked-potatoes-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/breakfast-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/cake2-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/cream-puffs-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/food1-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/meatballs-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/pizza2-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/salad-200-3.png" alt="Image of Food" >
                     </div>
-                    <div>
+                    <div class="gallery-image-container">
                         <img src="images/food1-200-3.png" alt="Image of Food" >
                     </div>
                 </div>
