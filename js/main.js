@@ -1,1 +1,17 @@
-function menu(){document.querySelector("body").classList.toggle("open")}var toggleMenu=document.querySelectorAll(".menu")[0];toggleMenu.addEventListener("click",menu,!1);
+// Mobile Navigation
+
+function mobileNav() {
+    let menuToggle = document.querySelector(".menu-toggle");
+    let nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", function() {
+        if (nav.style.display === "flex") {
+            nav.style.display = "none";
+        }
+        else {
+            nav.style.display = "flex";
+        }
+    });
+}
+
+mobileNav();
